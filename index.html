@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="index.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+			@media screen and (max-width:480px){
+				.table {width: 100%}
+			}
+		</style>
+ </head>
+  <body>
+    <div class="container">
+<form class="form-group">
+  <div class="row">
+  <div class="col-md-6">
+  <label>Tu Nombre</label> <span id="nombre-error"></span>
+  <input type="name" class="form-control" id="nombre" placeholder="Nombre...">
+  <label>Apellidos</label> <span id="apellidos-error"></span>
+  <input type="name" class="form-control" id="apellidos" placeholder="Apellidos...">
+  <label>Fecha nacimiento</label> <span id="fecha-error"></span>
+  <input type="date" class="form-control" id="fecha">
+</div>
+<div class="col-md-6">
+  <label>Selecciona el lenguaje</label> <span id="lenguaje-error"></span>
+  <select class="form-control" id="lenguaje">
+    <option>java</option>
+    <option>phyton</option>
+    <option>C#</option>
+  </select>
+  <label>Años de experiencia</label> <span id="anyos-error"></span>
+  <input type="number" class="form-control" id="anyos" placeholder="años exp...">
+</div>
+</div>
+</form>
+<br>
+<div class="form-buttons">
+<button class="btn btn-primary" type="button" name="anyadir">Añadir</button>
+<button class="btn btn-primary" type="button" name="restablecer">Restablecer</button>
+</div>
+</div>
+<br>
+<div class="container">
+<table class= "table table-bordered">
+  <thead>
+<th scope="col">Nombre</th>
+<th scope="col">Apellidos</th>
+<th scope="col">Fecha nac.</th>
+<th scope="col">Lenguaje</th>
+<th scope="col">Años exp.</th>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+<div class="table-buttons">
+<button class="btn btn-primary" style="float: right" type="button" name="borrar-datos">Borrar datos</button>
+</div>
+</div>
+  </body>
+</html>
